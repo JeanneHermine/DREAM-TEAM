@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*prend en compte la bordure et le padding*/
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color:#f1f1f1;
+
+}
+header{
+    padding: 20px 8%;
+}
+section{
+    padding: 70px 8%  ;
+}
+header{
+    display: flex;/*alignement*/
+    justify-content: space-between;/*espace entre les éléments*/
+    align-items: center;
+    width: 100%;
+}
+.logo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.logo_div{
+    width: 30%;
+}
+.logo span{
+    color: rgb(239, 239, 22);
+}
+ul{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    list-style: none;
+}
+ul li{
+    padding: 10px 25px;
+}
+ul li a{
+    text-decoration: none;
+    color: #999;
+    transition: 0.5s;
+    font-size: 14px;
+}
+ul li a:hover{
+    background-color: #f6d238;
+    padding: 15px;
+    color: #000;
+    font-weight: bold;
+    border-radius: 20px;
+}
+.btn_header{
+    width: 30%;
+    display:flex;/**/
+    justify-content: end;
+}
+.btn{
+    color: #000;
+    background-color: #f6d238;
+    border: 2px solid #f6d238;
+    padding: 15px 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.btn:hover{
+    background-color: #f1f1f1;
+    transform: rotate(5deg);
+
+}
+.btn i{
+    margin-right: 5px;/*décoller l'icone de réserver de 5px de la droite*/
+}
+.home-section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.home-section .left{/* se déplacer par rapport à sa place d'origine*/
+    position: relative;
+    width: 600px;
+    height: 500px;
+
+}
+.home-section .left img{/*les deux images se positionnent à la meme position dans la section*/
+    position: absolute;
+    object-fit: cover;/*redimensionner tout en conservant les proportions d'une img*/
+    border: 8px solid #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem ;
+
+}
+.home-section .left-image-1{
+    width: 450px;
+    height: 500px;
+    transition: 0.5s;
+
+}
+.home-section .left-image-1:hover{
+    transform: scale(1.1) rotate(10deg);/*agrandir/réduire sans modifier sa taille*/
+
+}
+
+.home-section .left-image-2{
+    width: 290px;
+    height: 290px;
+    transition: 0.5s;
+    top: 210px;
+    left: 280px;
+
+}
+
+.home-section .left-image-2:hover{
+    transform: scale(1.1) rotate(-10deg);
+
+}
+.right{
+    margin-left: 100px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.right .text-right{
+    color: #f6d238;
+    font-weight: bold;
+}
+.right h1{
+    margin: 20px 0;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 50px;
+}
+.right p{
+    margin-bottom: 25px;
+    color: #999;
+    width: 70%;
+    font-size: 14px;
+}
+.see-video{
+    border: 0;
+    display: flex;
+    background-color:transparent;
+    align-items: center;
+    cursor: pointer;
+
+}
+.buttons{
+    display: flex;
+    align-items: center;
+}
+.see-video span{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.video-bg{
+     margin-left: 20px;
+     background: url(img3.jpeg);
+     height: 50px;
+     width: 70px;
+     background-position: center;
+     background-size:cover ;
+     border-radius: 50%;
+     position: relative;
+     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+
+}
+.play-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    right: -20px;
+    transform: translate(-20%,50%);
+    
+}
+.play-btn i{
+    color: rgb(216, 73, 12);
+}
+.desc-button{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+.desc-button .buttons button{
+    background-color: #f6d238;
+    border: 0;
+    cursor: pointer;
+    border: 2px solid #f6d238;/*!!*/
+    height: 50px;
+    width: 50px;
+    border-radius:50%;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+
+}
+.desc-button .buttons button:hover{
+    background-color: #f1f1f1;
+    transform: rotate(10deg);
+
+}
+.second{
+    margin-left: 20px;
+}
+
+.desc-button .buttons button i{
+    font-size: 25px;
+}
+.destinations .small-desc{
+    color: #999;
+    width: 60%;
+    font-size: 14px;
+}
+.Destinations .gallerie .image{
+    width: 24%;
+    height: 300px;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.Destinations .gallerie .image img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    transition: 0.5s;
+}
+.Destinations .gallerie{
+    display: flex;
+    justify-content: space-between;
+}
+.Destinations .gallerie .description{
+    transform: translateY(350px);
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+.Destinations .gallerie .description h1{
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+.Destinations .gallerie .description p{
+    font-size: 20px;
+    color: #999;
+}
+
+.Destinations .gallerie .image:hover .description{
+    transform: translateY(-50px);
+}
+.Destinations .gallerie .image:hover img{
+    transform: translateY(-50px);
+
+}
+.best-trip{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-list{/**/
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.box-list .box{
+    width: 29%;
+    height: 350px;
+    position: relative;
+    border-radius:1rem;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+
+}
+.box-list .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+.box-list .box:hover img{/* pourquoi pas img hover*/
+    transform: scale(2) rotate(10deg);
+}
+.box-list .box .description{
+    position: absolute;
+    bottom: 0;/*pourquoi*/
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    transition: 0.5s;
+}
+.box-list .box .description h2{
+    font-size: 16px;
+    font-weight: 500;
+}
+.rating{
+        color: #dca930;
+        margin-top: 5px;
+        font-weight: bold;
+}
+.box-list .box .description .button-description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-list .box .description .button-description span{
+    font-size: 15px;
+}
+.box-list .box .description .button-description button{
+    background-color: transparent;
+    color: #f6d238;
+    padding: 10px 20px;
+    border: 1px solid #f6d238;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.box-list .box .description .button-description button:hover{
+    background-color:#f6d238;
+    border: 5px solid #f6d238;
+    color: #000;
+}
+.best-trip .title{
+    text-align: center;
+    font-size: 30px;
+}
+.best-trip .small-desc{
+    text-align: center;
+    margin: 30px auto;
+    color: #999;
+    font-size: 14px;
+}
+.view-all{/* le hover !!*/
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email-trip{
+    border: 9px solid rgb(216, 73, 12);
+    border-radius: 1rem;
+    padding: 15px;
+    margin: 15px;
+}
+.email-trip:hover{
+    border-color:rgb(198, 83, 102) rgb(213, 117, 117) rgb(216, 73, 12);
+    transition: 0.5s;
+}
+
+.email-trip h1{
+    margin-bottom: 20px;
+}
+.email-trip p{
+    font-size: 14px;
+    color: #999;
+}
+.together{
+    display: flex;
+    justify-content: space-between;
+}
+.email-trip .together .text{
+    width: 500px;
+}
+.input{
+    border: #fff;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;/**/
+}
+.input input{
+    border: 0;
+    padding: 12px;
+    padding-left: 20px;
+    width: 400px;
+    outline: none;
+}
+footer{
+    background-color:#f1f1f1;
+    border-radius:60px 60px 0 0;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+footer .rights{
+    color: #999;
+    font-size: 14px;
+
+}
+footer .rights span{
+    color: #f6d238;
+}
+
+
+
+
+    
+
+
